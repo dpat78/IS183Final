@@ -3,8 +3,8 @@
   <div class="book-card-container" *ngFor="let tank of tanks; let i = index">
     <div class="book-card" [routerLink]="['/tank',tank.id]">
       <P>ID: {{tank.id}}</P>
-      <P>Tank Name: {{tank.tank_name}}</P>
-      <P>Serial Number: {{tank.serial_number}}</P>
+      <P>Tank Name: {{tank.name}}</P>
+      <P>Serial Number: {{tank.serial}}</P>
       <P>Gallons: {{tank.gallons}}</P>
       <P>Active: {{tank.active}}</P>
     </div>

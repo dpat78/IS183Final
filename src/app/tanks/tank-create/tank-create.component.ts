@@ -21,7 +21,8 @@ export class TankCreateComponent implements OnInit {
     this.tank = {};
   }
 
-  createTank(tank:Object) {
+  createTank(tank:Object) { 
+    console.log(tank);
     this.tankService.addTank(tank).then((resp) => {
       this.router.navigate(['/tanks']);
     });

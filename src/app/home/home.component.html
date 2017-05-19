@@ -20,11 +20,24 @@
     <div class="book-card-container" *ngFor="let tank of tanks">
       <div class="book-card" [routerLink]="['/tank',tank.id]">
         <P>ID: {{tank.id}}</P>
-        <P>Tank Name: {{tank.tank_name}}</P>
-        <P>Serial Number: {{tank.serial_number}}</P>
+        <P>Tank Name: {{tank.name}}</P>
+        <P>Serial Number: {{tank.serial}}</P>
         <P>Gallons: {{tank.gallons}}</P>
+      </div>
+    </div>
+  </div>
+ <!-- books -->
+  <div class="block">
+    <h1 class="center">Users Available</h1>
+    <div class="book-card-container" *ngFor="let user of users">
+      <div class="book-card" [routerLink]="['/user',user.id]">
+        <img class="book-cover" [src]="user.image_url" alt="user">
+        <P>Username: {{user.name}}</P>
+        <P>Email: {{user.email}}</P>
       </div>
     </div>
   </div>
 
 </div>
+
+
